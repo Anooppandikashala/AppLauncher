@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AM Launcher</string>
+    <string name="email">anooppkrishnan96@gmail.com</string>
+    <string name="copy">Copy Right &#169; AM &amp; AN Pvt.Ltd </string>
+    <string name="title_activity_home2">Home2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

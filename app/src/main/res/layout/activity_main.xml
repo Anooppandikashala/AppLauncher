@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed11"
+    android:orientation="vertical"
+    tools:context="com.example.anoop.applauncher.MainActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="left"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/srch5"
+            android:id="@+id/imageButton1"
+
+            android:onClick="onButtonClick"
+            android:paddingLeft="12dp"
+            android:layout_marginLeft="10dp"
+
+            />
+
+
+        <EditText
+            android:layout_width="252dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Search /or Press the mic\nSpeak : 'Open Camera'."
+            android:inputType="textVisiblePassword"
+
+            android:id="@+id/textView2"
+            android:layout_marginRight="10dp"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/micccccc"
+            android:id="@+id/imageButton"
+
+            android:onClick="onButtonClick"
+            android:layout_gravity="center"
+            android:layout_above="@+id/textView4"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <!--TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="italic"
+        android:id="@+id/textView1"
+        android:layout_marginTop="250dp"
+        android:textAlignment="center" /-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:layout_marginTop="270dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="20dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/info_icon"
+                android:layout_gravity="bottom|center"
+                android:id="@+id/infoicon"
+                android:onClick="MenuOpen"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+
+            android:paddingTop="0dp"
+            android:paddingBottom="5dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="20dp"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/inter"
+                    android:layout_gravity="bottom|center"
+                    android:id="@+id/chrome"
+                    android:onClick="MenuOpen"
+
+                    />
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/file"
+                    android:layout_gravity="bottom|center"
+                    android:id="@+id/file"
+                    android:onClick="MenuOpen"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="20dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/play"
+                    android:layout_gravity="bottom|center"
+                    android:id="@+id/play"
+                    android:onClick="MenuOpen"
+                    />
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/settingsicon"
+                    android:layout_gravity="bottom|center"
+                    android:id="@+id/setting"
+                    android:onClick="MenuOpen"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+            <!--TextView
+                android:text="@string/copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:textColor="@android:color/black"
+                android:id="@+id/textView5"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textAllCaps="false"
+                android:fontFamily="monospace"
+
+
+                /-->
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_gravity="center"
+            android:paddingTop="0dp"
+            android:paddingBottom="5dp"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/dial"
+                android:layout_gravity="bottom|center"
+                android:id="@+id/dial"
+                android:onClick="MenuOpen"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/gmail"
+                android:layout_gravity="bottom|center"
+                android:id="@+id/gmail"
+                android:onClick="MenuOpen"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/music"
+                android:layout_gravity="bottom|center"
+                android:id="@+id/music"
+                android:onClick="MenuOpen"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/home"
+                android:layout_gravity="bottom|center"
+                android:id="@+id/homeico"
+                android:onClick="MenuOpen"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/cammmm"
+                android:layout_gravity="bottom|center"
+                android:id="@+id/camera"
+                android:onClick="MenuOpen"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/gallery"
+                android:layout_gravity="bottom|center"
+                android:id="@+id/gallery"
+                android:onClick="MenuOpen"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/wtsapp"
+                android:layout_gravity="bottom|center"
+                android:id="@+id/wtsapp"
+                android:onClick="MenuOpen"
+                />
+
+
+
+            <!--TextView
+                android:text="@string/copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:textColor="@android:color/black"
+                android:id="@+id/textView5"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textAllCaps="false"
+                android:fontFamily="monospace"
+
+
+                /-->
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
